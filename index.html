@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light PE Max宣传页</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            animation: gradient 15s ease infinite;
+            background-size: 400% 400%;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        header {
+            background: linear-gradient(to right, #007BFF, #00C6FF);
+            color: white;
+            text-align: center;
+            padding: 3em 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 0.2em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.8;
+        }
+
+        main {
+            padding: 2em;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2em;
+            margin-bottom: 2em;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transform: translateY(50px);
+            opacity: 0;
+            transition: all 0.8s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .section h2 {
+            color: #007BFF;
+            font-size: 1.8em;
+            margin-top: 0;
+        }
+
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .section li {
+            margin-bottom: 0.8em;
+            line-height: 1.6;
+        }
+
+        .download-button {
+            display: inline-block;
+            background: linear-gradient(to right, #007BFF, #00C6FF);
+            color: white;
+            padding: 0.8em 2em;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            box-shadow: 0 3px 10px rgba(0, 123, 255, 0.3);
+            transition: background 0.3s ease;
+            margin: 0.5em;
+        }
+
+        .download-button:hover {
+            background: linear-gradient(to right, #0056b3, #009ACD);
+        }
+
+        .poetry {
+            color: #007BFF;
+            font-style: italic;
+            margin-top: 1em;
+        }
+
+        .screenshot {
+            margin-top: 1em;
+        }
+
+        .screenshot img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 0.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#feature-section">特性</a>
+        <a href="#usage-scenario-section">使用场景</a>
+        <a href="#faq-section">常见问题</a>
+        <a href="#contact-section">联系作者</a>
+        <a href="#tutorial-section">使用教程</a>
+        <a href="#comparison-section">对比优势</a>
+        <a href="#screenshot-section">截图展示</a>
+        <a href="#download-section">下载</a>
+    </nav>
+    <header>
+        <h1>Light PE Max</h1>
+        <p>全方位解决系统问题，让你的电脑维护无忧！</p>
+    </header>
+    <main>
+        <div class="section" id="feature-section">
+            <h2>Light PE Max 特性</h2>
+            <ul>
+                <li><strong>丰富工具集</strong>: 集成了磁盘分区、数据恢复、系统修复等众多实用工具，满足各种系统维护需求。</li>
+                <li><strong>硬件兼容性强</strong>: 支持市面上绝大多数的硬件设备，确保在不同电脑上都能稳定运行。</li>
+                <li><strong>快速启动</strong>: 无需漫长等待，快速进入系统，节省你的宝贵时间。</li>
+                <li><strong>安全可靠</strong>: 纯净无广告，保障你的数据安全和隐私。</li>
+                <li><strong>基于雷电 PE 改进</strong>: 传承雷电 PE 的优秀特性，并在此基础上进行了优化和拓展。</li>
+                <li><strong>Windows 11 内壳</strong>: 采用 Windows 11 内核，带来更强大的性能和兼容性。</li>
+                <li><strong>多语言支持</strong>: 提供多种语言界面，方便不同地区用户使用。</li>
+                <li><strong>实时更新</strong>: 及时更新工具和驱动，保持系统的最佳性能。</li>
+                <li><strong>轻量化设计</strong>: 占用资源少，运行流畅不卡顿。</li>
+            </ul>
+            <p class="poetry"></p>
+        </div>
+        <div class="section" id="usage-scenario-section">
+            <h2>使用场景</h2>
+            <ul>
+                <li><strong>系统安装与修复</strong>: 当你的操作系统无法正常启动时，可以使用 Light PE Max 进行系统的全新安装或者修复损坏的系统文件。</li>
+                <li><strong>数据备份与恢复</strong>: 在系统出现故障或者硬盘损坏前，利用 Light PE Max 中的数据备份工具将重要数据进行备份，之后在需要时进行恢复。</li>
+                <li><strong>硬件检测与维护</strong>: 借助内置的硬件检测工具，对电脑的硬件进行全面检测，排查硬件故障，同时可以进行磁盘清理和优化等维护操作。</li>
+                <li><strong>密码重置</strong>: 如果忘记了 Windows 系统登录密码，Light PE Max 可以帮助你重置密码，重新获得系统访问权限。</li>
+            </ul>
+            <p class="poetry"></p>
+        </div>
+        <div class="section" id="faq-section">
+            <h2>常见问题解答</h2>
+            <p><strong>Q: Light PE Max 可以在所有电脑上使用吗？</strong></p>
+            <p>A: 由于它具有很强的硬件兼容性，支持市面上绝大多数的硬件设备，但对于一些非常老旧或者特殊的硬件，可能会存在兼容性问题。</p>
+            <p><strong>Q: 使用 Light PE Max 会对我的数据造成影响吗？</strong></p>
+            <p>A: 正常使用情况下，Light PE Max 不会对数据造成影响。但在进行磁盘分区、格式化等操作时，请务必提前备份重要数据。</p>
+            <p><strong>Q: 如何下载和使用 Light PE Max？</strong></p>
+            <p>A: 你可以在本页面点击下载按钮进行下载，下载完成后，将其制作成可引导的 U 盘，然后在电脑开机时选择从 U 盘启动即可使用。</p>
+            <p class="poetry"></p>
+        </div>
+        <div class="section" id="contact-section">
+            <h2>联系作者</h2>
+            <p>QQ：1057018461</p>
+            <p>bug反馈QQ群：644069335</p>
+            <p class="poetry"></p>
+        </div>
+        <div class="section" id="tutorial-section">
+            <h2>使用教程</h2>
+            <h3>制作可引导 U 盘</h3>
+            <ol>
+                <li>下载并打开 Light PE Max 镜像文件。</li>
+                <li>插入一个容量足够的空白 U 盘。</li>
+                <li>使用专业的 U 盘制作工具（如 Rufus），选择 Light PE Max 镜像文件和 U 盘，按照提示完成 U 盘制作。</li>
+            </ol>
+            <h3>进入 Light PE Max 系统</h3>
+            <ol>
+                <li>将制作好的 U 盘插入需要维护的电脑。</li>
+                <li>重启电脑，在开机过程中根据提示按下对应的按键（如 F12、Del 等）进入 BIOS 或 Boot Menu。</li>
+                <li>在 BIOS 或 Boot Menu 中选择从 U 盘启动。</li>
+            </ol>
+            <h3>使用系统工具</h3>
+            <p>进入 Light PE Max 系统后，你可以在桌面上找到各种系统工具，如磁盘分区工具、数据恢复工具等。根据自己的需求选择相应的工具进行操作。</p>
+            <p class="poetry"></p>
+        </div>
+        <div class="section" id="comparison-section">
+            <h2>对比优势</h2>
+            <h3>与传统 PE 系统对比</h3>
+            <ul>
+                <li><strong>启动速度更快</strong>: 传统 PE 系统启动时间较长，而 Light PE Max 采用了优化的启动机制，能够快速进入系统，节省你的时间。</li>
+                <li><strong>功能更丰富</strong>: 除了具备传统 PE 系统的基本功能外，Light PE Max 还集成了更多实用工具，如实时更新、多语言支持等。</li>
+                <li><strong>硬件兼容性更好</strong>: 传统 PE 系统可能在一些较新或较旧的硬件上存在兼容性问题，而 Light PE Max 经过了广泛的测试，能够支持市面上绝大多数的硬件设备。</li>
+            </ul>
+            <h3>与同类产品对比</h3>
+            <ul>
+                <li><strong>安全性更高</strong>: 同类产品可能存在广告、插件等安全隐患，而 Light PE Max 纯净无广告，保障你的数据安全和隐私。</li>
+                <li><strong>更新更及时</strong>: Light PE Max 拥有实时更新功能，能够及时修复系统漏洞和更新工具，保持系统的最佳性能。</li>
+                <li><strong>用户体验更好</strong>: 优化的界面布局和操作流程，使得 Light PE Max 更加易于使用，即使是新手用户也能快速上手。</li>
+            </ul>
+            <p class="poetry"></p>
+        </div>
+        <div class="section" id="update-log-section">
+            <h2>更新日志</h2>
+            <p><strong>版本 1.0.0</strong></p>
+            <ul>
+                <li>发布了 Light PE Max 初始版本，包含基本的系统维护工具。</li>
+            </ul>
+            <p class="poetry"></p>
+        </div>
+        <div class="section" id="screenshot-section">
+            <h2>截图展示</h2>
+            <div class="screenshot">
+                <img src="https://hv.z.wiki/autoupload/20250329/LkP4/2053X1533/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_2025-03-29_153139.png" alt="截图1">
+                <p>Light PE Max占用空间小的特点。</p>
+            </div>
+            <div class="screenshot">
+                <img src="https://cdn.z.wiki/autoupload/20250329/4uzH/2068X1544/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE_2025-03-29_153553.png" alt="截图2">
+                <p>PE系统可联网的特性。</p>
+            </div>
+            <p class="poetry"></p>
+        </div>
+        <div class="section" id="download-section">
+            <h2>立即下载</h2>
+            <p>点击下面的按钮下载 Light PE Max，开启轻松电脑维护之旅！你可以根据自己的网络情况选择不同的下载分流。</p>
+            <a href="https://github.com/YYT-2013/my-pe/releases" class="download-button">下载主网址</a>
+            <a href="https://github.com/YYT-2013/my-pe/releases" class="download-button">123分流云盘</a>
+            <a href="https://pan.huang1111.cn/s/k2oDvcB" class="download-button">huang1111分流</a>
+            <p class="poetry"></p>
+        </div>
+    </main>
+    <script>
+        const sections = document.querySelectorAll('.section');
+
+        function checkScroll() {
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (sectionTop < windowHeight * 0.8) {
+                    section.classList.add('show');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkScroll);
+        window.addEventListener('load', checkScroll);
+
+        const poems = [
+            "PE 系统功能强，数据修复有良方。硬件兼容无阻碍，电脑维护绽光芒。",
+            "Light PE 速度快，系统启动不等待。工具丰富真实用，电脑问题全解开。",
+            "PE 之境展神通，数据安全在心中。修复安装皆顺手，电脑焕新乐无穷。",
+            "Max 版本实力优，PE 系统上层楼。多语支持更便捷，维护体验超一流。",
+            "轻量 PE 效率高，系统难题全赶跑。实时更新常相伴，电脑顺畅乐逍遥。",
+            "PE 光芒耀四方，系统维护有保障。硬件适配皆完美，数据无忧心不慌。",
+            "Light PE 似神兵，启动快速如流星。工具多样助维护，电脑稳定又安宁。",
+            "PE 天地展宏图，数据恢复有奇术。修复安装无缝接，电脑焕彩似明珠。",
+            "Max 一出势非凡，PE 系统换新颜。多语交互真便利，维护体验乐无边。",
+            "轻装 PE 效能高，系统困扰全清剿。实时更新不停歇，电脑运行更美妙。",
+            "PE 系统功能全，数据修复稳又专。硬件兼容无障碍，电脑维护乐开颜。",
+            "Light PE 快如箭，系统启动一瞬间。工具丰富解难题，电脑故障不再现。",
+            "PE 世界显神通，数据安全握手中。修复安装皆精准，电脑焕新气势雄。",
+            "Max 版本质优良，PE 系统创辉煌。多语支持超贴心，维护体验超真棒。",
+            "轻量 PE 效率佳，系统问题全拿下。实时更新保活力，电脑顺畅人人夸。",
+            "PE 之光耀九州，系统维护解烦忧。硬件适配无差错，数据安全不用愁。",
+            "Light PE 如闪电，系统启动眨眼间。工具多样助解难，电脑稳定似泰山。",
+            "PE 天地绽芳华，数据恢复有办法。修复安装无缝隙，电脑焕彩放光华。",
+            "Max 登场风采展，PE 系统大改变。多语交互真方便，维护体验超惊艳。",
+            "轻装 PE 实力强，系统困扰一扫光。实时更新不间断，电脑运行更流畅。",
+            "PE 系统功能妙，数据修复有高招。硬件兼容无烦恼，电脑维护乐陶陶。",
+            "Light PE 速度妙，系统启动瞬间到。工具丰富故障消，电脑顺畅没烦恼。",
+            "PE 之域显奇能，数据安全稳如城。修复安装皆精准，电脑焕新面貌清。",
+            "Max 版本超卓越，PE 系统新跨越。多语支持超贴心，维护体验超愉悦。",
+            "轻量 PE 效能妙，系统问题全赶跑。实时更新不停步，电脑运行更高效。",
+            "PE 光芒照万家，系统维护有办法。硬件适配无偏差，数据安全人人夸。",
+            "Light PE 似疾风，系统启动快如风。工具多样解困窘，电脑稳定情意浓。",
+            "PE 天地展新篇，数据恢复有新颜。修复安装皆自然，电脑焕彩梦儿甜。",
+            "Max 亮相风采现，PE 系统大转变。多语交互真便捷，维护体验超亮眼。",
+            "轻装 PE 实力显，系统困扰全消散。实时更新不间断，电脑运行更稳健。",
+            "PE 系统功能全，数据修复稳又专。硬件兼容无障碍，电脑维护乐开颜。",
+            "Light PE 快如箭，系统启动一瞬间。工具丰富解难题，电脑故障不再现。",
+            "PE 世界显神通，数据安全握手中。修复安装皆精准，电脑焕新气势雄。",
+            "Max 版本质优良，PE 系统创辉煌。多语支持超贴心，维护体验超真棒。",
+            "轻量 PE 效率佳，系统问题全拿下。实时更新保活力，电脑顺畅人人夸。",
+            "PE 之光耀九州，系统维护解烦忧。硬件适配无差错，数据安全不用愁。",
+            "Light PE 如闪电，系统启动眨眼间。工具多样助解难，电脑稳定似泰山。",
+            "PE 天地绽芳华，数据恢复有办法。修复安装无缝隙，电脑焕彩放光华。",
+            "Max 登场风采展，PE 系统大改变。多语交互真方便，维护体验超惊艳。",
+            "轻装 PE 实力强，系统困扰一扫光。实时更新不间断，电脑运行更流畅。",
+            "PE 系统功能妙，数据修复有高招。硬件兼容无烦恼，电脑维护乐陶陶。",
+            "Light PE 速度妙，系统启动瞬间到。工具丰富故障消，电脑顺畅没烦恼。",
+            "PE 之域显奇能，数据安全稳如城。修复安装皆精准，电脑焕新面貌清。",
+            "Max 版本超卓越，PE 系统新跨越。多语支持超贴心，维护体验超愉悦。",
+            "轻量 PE 效能妙，系统问题全赶跑。实时更新不停步，电脑运行更高效。",
+            "PE 光芒照万家，系统维护有办法。硬件适配无偏差，数据安全人人夸。",
+            "Light PE 似疾风，系统启动快如风。工具多样解困窘，电脑稳定情意浓。",
+            "PE 天地展新篇，数据恢复有新颜。修复安装皆自然，电脑焕彩梦儿甜。",
+            "Max 亮相风采现，PE 系统大转变。多语交互真便捷，维护体验超亮眼。",
+            "轻装 PE 实力显，系统困扰全消散。实时更新不间断，电脑运行更稳健。",
+            "PE 系统功能全，数据修复稳又专。硬件兼容无障碍，电脑维护乐开颜。",
+            "Light PE 快如箭，系统启动一瞬间。工具丰富解难题，电脑故障不再现。",
+            "PE 世界显神通，数据安全握手中。修复安装皆精准，电脑焕新气势雄。",
+            "Max 版本质优良，PE 系统创辉煌。多语支持超贴心，维护体验超真棒。",
+            "轻量 PE 效率佳，系统问题全拿下。实时更新保活力，电脑顺畅人人夸。",
+            "PE 之光耀九州，系统维护解烦忧。硬件适配无差错，数据安全不用愁。",
+            "Light PE 如闪电，系统启动眨眼间。工具多样助解难，电脑稳定似泰山。",
+            "PE 天地绽芳华，数据恢复有办法。修复安装无缝隙，电脑焕彩放光华。",
+            "Max 登场风采展，PE 系统大改变。多语交互真方便，维护体验超惊艳。",
+            "轻装 PE 实力强，系统困扰一扫光。实时更新不间断，电脑运行更流畅。",
+            "PE 系统功能妙，数据修复有高招。硬件兼容无烦恼，电脑维护乐陶陶。",
+            "Light PE 速度妙，系统启动瞬间到。工具丰富故障消，电脑顺畅没烦恼。",
+            "PE 之域显奇能，数据安全稳如城。修复安装皆精准，电脑焕新面貌清。",
+            "Max 版本超卓越，PE 系统新跨越。多语支持超贴心，维护体验超愉悦。",
+            "轻量 PE 效能妙，系统问题全赶跑。实时更新不停步，电脑运行更高效。",
+            "PE 光芒照万家，系统维护有办法。硬件适配无偏差，数据安全人人夸。",
+            "Light PE 似疾风，系统启动快如风。工具多样解困窘，电脑稳定情意浓。",
+            "PE 天地展新篇，数据恢复有新颜。修复安装皆自然，电脑焕彩梦儿甜。",
+            "Max 亮相风采现，PE 系统大转变。多语交互真便捷，维护体验超亮眼。",
+            "轻装 PE 实力显，系统困扰全消散。实时更新不间断，电脑运行更稳健。"
+        ];
+
+        const poetryElements = document.querySelectorAll('.poetry');
+        poetryElements.forEach(element => {
+            const randomIndex = Math.floor(Math.random() * poems.length);
+            element.textContent = poems[randomIndex];
+        });
+    </script>
+</body>
+
+</html>
+    
